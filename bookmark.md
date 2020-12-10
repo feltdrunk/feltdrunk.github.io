@@ -6,7 +6,7 @@ menu: Bookmark
 ---
  
 ## Kubernetes
-- [kubectl](https://kubernetes.io/docs/reference/kubectl) - kubectl command-line interface
+- [kubectl](https://kubernetes.io/docs/reference/kubectl/) - kubectl command-line interface
 
 ## Java
 - [Xstream](http://x-stream.github.io/index.html) -  Serialize objects to XML and back again

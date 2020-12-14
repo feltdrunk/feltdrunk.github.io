@@ -10,7 +10,6 @@ MyBatis是一款优秀的持久层框架，它对JDBC的操作数据的过程进
 MyBatis通过XML或注解将要执行的各种statement配置起来，并通过java对象和statement中的sql进行映射生成最终执行的SQL语句，最后由mybatis框架执行sql并将结果映射成java对象并返回。
 
 
-
 ## 传统jdbc访问数据库
 
 ### 示例：
@@ -73,5 +72,3 @@ Q4：结果集中也存在硬编码问题。
 
 
 ……To Be Continue
-
-​       

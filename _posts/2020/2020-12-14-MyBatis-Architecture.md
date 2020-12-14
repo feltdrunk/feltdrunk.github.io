@@ -5,9 +5,9 @@ category: JAVA
 tags: [JAVA]
 ---
 
-​      MyBatis是一款优秀的持久层框架，它对JDBC的操作数据的过程进行封装，使开发者只需要关注SQL本身，而不需要花费精力去处理注册驱动，创建连接，statement，设置参数，结果集检索等繁琐的代码过程。
+MyBatis是一款优秀的持久层框架，它对JDBC的操作数据的过程进行封装，使开发者只需要关注SQL本身，而不需要花费精力去处理注册驱动，创建连接，statement，设置参数，结果集检索等繁琐的代码过程。
 
-​      MyBatis通过XML或注解将要执行的各种statement配置起来，并通过java对象和statement中的sql进行映射生成最终执行的SQL语句，最后由mybatis框架执行sql并将结果映射成java对象并返回。
+MyBatis通过XML或注解将要执行的各种statement配置起来，并通过java对象和statement中的sql进行映射生成最终执行的SQL语句，最后由mybatis框架执行sql并将结果映射成java对象并返回。
 
 
 

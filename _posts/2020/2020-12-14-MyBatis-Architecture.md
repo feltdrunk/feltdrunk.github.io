@@ -13,7 +13,7 @@ MyBatis通过XML或注解将要执行的各种statement配置起来，并通过j
 
 ## 传统jdbc访问数据库
 
-#### 1、示例：
+### 1、示例：
 
 ```java
 import java.sql.Connection;
@@ -52,7 +52,7 @@ public class JDBCTest {
 }
 ```
 
-#### 2、问题：
+### 2、问题：
 
 Q1：数据库驱动和连接频繁的创建和释放，造成数据库资源的浪费。
 

@@ -11,8 +11,6 @@ MyBatis通过XML或注解将要执行的各种statement配置起来，并通过j
 
 
 
-
-
 ## 传统jdbc访问数据库
 
 #### 1、示例：

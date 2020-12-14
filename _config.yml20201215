@@ -55,6 +55,11 @@ navs:
   -
     href: /
     label: Home
+
+#  -
+#    href: /open-source
+#    label: Open-Source
+
   -
     href: /blog
     label: Blog

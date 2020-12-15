@@ -72,6 +72,9 @@ Q4：结果集中也存在硬编码问题。
 
 
 
-……To Be Continue
+##  MyBatis架构
 
-​       
+###  架构示意图
+
+![mybatis架构示意图](https://feltdrunk.github.io/img/mybatis01.png)
+

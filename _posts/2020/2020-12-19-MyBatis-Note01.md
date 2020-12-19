@@ -8,6 +8,7 @@ tags: [Mybatis]
 Quick note about MyBatis configuration.
 
 
+
 ![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
 
 ## 简介
@@ -83,7 +84,7 @@ Dao层，Service层，Controller层
 
 ### 搭建环境
 
--    搭建数据库
+- 搭建数据库
 
   ```mysql
   CREATE DATABASE `mybatis`;
@@ -303,6 +304,16 @@ Dao层，Service层，Controller层
 
 - 可能会遇到的问题：
 
+   1、配置文件没有注册
+
+   2、绑定接口错误
+
+   3、方法名不对
+
+   4、返回类型不对
+
+   5、Maven导出资源问题
+
   ```xml
   <build>
       <resources>
@@ -325,3 +336,26 @@ Dao层，Service层，Controller层
       </resources>
   </build> 
   ```
+
+  
+
+
+
+
+
+​     
+
+
+
+
+
+​                
+
+​             
+
+​            
+
+
+
+
+

@@ -5,15 +5,14 @@ category: Mybatis
 tags: [Mybatis]
 ---
 
-Quick note about MyBatis configuration
-
+Quick note about MyBatis configuration.
 
 
 ![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
 
-### 1.简介
+## 1.简介
 
-#### 1.1 什么是Mybatis
+### 1.1 什么是Mybatis
 
 - MyBatis 是一款优秀的持久层框架，
 - 它支持自定义 SQL、存储过程以及高级映射。
@@ -41,7 +40,7 @@ Quick note about MyBatis configuration
 
 - 中文文档：https://mybatis.org/mybatis-3/zh/index.html
 
-####  1.2 持久化
+###  1.2 持久化
 
 数据持久化
 
@@ -54,14 +53,14 @@ Quick note about MyBatis configuration
 - 有一些对象，不能让他丢掉。
 - 内存太贵
 
-#### 1.3 持久层
+### 1.3 持久层
 
 Dao层，Service层，Controller层
 
 -  完成持久化工作的代码块。
 - 层界限十分明显。
 
-#### 1.4 为什么需要Mybatis
+### 1.4 为什么需要Mybatis
 
 - 帮助程序员将数据存入到数据库中
 - 方便
@@ -78,11 +77,11 @@ Dao层，Service层，Controller层
 
 
 
-### 2.第一个MyBatis程序
+## 2.第一个MyBatis程序
 
-思路：搭建环境——导入Mybatis—编写代码——测试
+思路：搭建环境-->导入Mybatis-->编写代码-->测试
 
-#### 2.1 搭建环境
+### 2.1 搭建环境
 
 搭建数据库
 
@@ -133,7 +132,7 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
 
 
 
-#### 2.2 创建模块
+### 2.2 创建模块
 
 - 编写mybatis的核心配置文件
 
@@ -190,7 +189,7 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
 
 
 
-#### 2.3 编写代码
+### 2.3 编写代码
 
 - 实体类
 
@@ -276,7 +275,7 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
 
 
 
-#### 2.4 测试
+### 2.4 测试
 
 - junit测试
 

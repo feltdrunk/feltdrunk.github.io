@@ -8,11 +8,12 @@ tags: [Mybatis]
 Quick note about MyBatis configuration.
 
 
+
 ![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
 
-## 1.简介
+## 简介
 
-### 1.1 什么是Mybatis
+### 什么是Mybatis
 
 - MyBatis 是一款优秀的持久层框架，
 - 它支持自定义 SQL、存储过程以及高级映射。
@@ -40,7 +41,7 @@ Quick note about MyBatis configuration.
 
 - 中文文档：https://mybatis.org/mybatis-3/zh/index.html
 
-###  1.2 持久化
+###  持久化
 
 数据持久化
 
@@ -53,14 +54,14 @@ Quick note about MyBatis configuration.
 - 有一些对象，不能让他丢掉。
 - 内存太贵
 
-### 1.3 持久层
+### 持久层
 
 Dao层，Service层，Controller层
 
 -  完成持久化工作的代码块。
 - 层界限十分明显。
 
-### 1.4 为什么需要Mybatis
+### 为什么需要Mybatis
 
 - 帮助程序员将数据存入到数据库中
 - 方便
@@ -77,62 +78,65 @@ Dao层，Service层，Controller层
 
 
 
-## 2.第一个MyBatis程序
+## 第一个MyBatis程序
 
 思路：搭建环境-->导入Mybatis-->编写代码-->测试
 
-### 2.1 搭建环境
+### 搭建环境
 
-搭建数据库
+-    搭建数据库
 
-```mysql
-CREATE DATABASE `mybatis`;
-USE `mybatis`;
-
-CREATE TABLE `user`(
-    `id` INT(20) NOT NULL PRIMARY KEY,
-    `name` VARCHAR(30) DEFAULT NULL,
-    `pwd` VARCHAR(30) DEFAULT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8;
-
-INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
-(1,'张三','123456'),
-(2,'李四','123456'),
-(3,'王五','123456')
-```
+  ```mysql
+  CREATE DATABASE `mybatis`;
+  USE `mybatis`;
+  
+  CREATE TABLE `user`(
+      `id` INT(20) NOT NULL PRIMARY KEY,
+      `name` VARCHAR(30) DEFAULT NULL,
+      `pwd` VARCHAR(30) DEFAULT NULL
+  )ENGINE=INNODB DEFAULT CHARSET=utf8;
+  
+  INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
+  (1,'张三','123456'),
+  (2,'李四','123456'),
+  (3,'王五','123456')
+  ```
 
 - 新建项目
+
 - 普通maven项目
+
 - 删除src目录
+
 - 导入maven依赖
 
-```xml
-<!-- 导入依赖 -->
-    <dependencies>
-        <!--mysql驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
-        </dependency>
-        <!--mybatis驱动-->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.2</version>
-        </dependency>
-        <!--junit驱动-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
-```
+  ```xml
+  <!-- 导入依赖 -->
+      <dependencies>
+          <!--mysql驱动-->
+          <dependency>
+              <groupId>mysql</groupId>
+              <artifactId>mysql-connector-java</artifactId>
+              <version>5.1.47</version>
+          </dependency>
+          <!--mybatis驱动-->
+          <dependency>
+              <groupId>org.mybatis</groupId>
+              <artifactId>mybatis</artifactId>
+              <version>3.5.2</version>
+          </dependency>
+          <!--junit驱动-->
+          <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>4.12</version>
+          </dependency>
+      </dependencies>
+  ```
 
 
 
-### 2.2 创建模块
+### 创建模块
 
 - 编写mybatis的核心配置文件
 
@@ -189,7 +193,7 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
 
 
 
-### 2.3 编写代码
+### 编写代码
 
 - 实体类
 
@@ -275,63 +279,73 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
 
 
 
-### 2.4 测试
+###  测试
 
 - junit测试
 
-
-```java
-public class UserDaoTest {
-    @Test
-    public void test(){
-        //第一步：获取SqlSeesion对象
-        SqlSession sqlSession = MybatisUtils.getSqlSession();
-        //第二步 getMapper
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
-        List<User> userlist = userDao.getUserList();
-
-        for (User user : userlist){
-            System.out.println(user);
-        }
-        //关闭SqlSession
-        sqlSession.close();
-    }
-}
-```
+  ```java
+  public class UserDaoTest {
+      @Test
+      public void test(){
+          //第一步：获取SqlSeesion对象
+          SqlSession sqlSession = MybatisUtils.getSqlSession();
+          //第二步 getMapper
+          UserDao userDao = sqlSession.getMapper(UserDao.class);
+          List<User> userlist = userDao.getUserList();
+  
+          for (User user : userlist){
+              System.out.println(user);
+          }
+          //关闭SqlSession
+          sqlSession.close();
+      }
+  }  
+  ```
 
 - 可能会遇到的问题：
 
+  ```xml
+  <build>
+      <resources>
+          <resource>
+              <directory>src/main/java</directory>
+              <includes>
+                  <include>**/*.properties</include>
+                  <include>**/*.xml</include>
+              </includes>
+              <filtering>ture</filtering>
+          </resource>
+          <resource>
+              <directory>src/main/resources</directory>
+              <includes>
+                  <include>**/*.properties</include>
+                  <include>**/*.xml</include>
+              </includes>
+              <filtering>ture</filtering>
+          </resource>
+      </resources>
+  </build> 
+  ```
 
-1、配置文件没有注册
+  
 
-2、绑定接口错误
 
-3、方法名不对
 
-4、返回类型不对
 
-5、Maven导出资源问题
 
-```xml
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>ture</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>ture</filtering>
-            </resource>
-        </resources>
-    </build>
-```
+​     
+
+
+
+
+
+​                
+
+​             
+
+​            
+
+
+
+
 

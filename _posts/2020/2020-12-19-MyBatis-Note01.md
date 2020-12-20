@@ -8,7 +8,6 @@ tags: [Mybatis]
 Quick note about MyBatis configuration.
 
 
-
 ​                                                                                                                                                  ![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
 
 ## 简介
@@ -336,26 +335,3 @@ Dao层，Service层，Controller层
       </resources>
   </build> 
   ```
-
-  
-
-
-
-
-
-​     
-
-
-
-
-
-​                
-
-​             
-
-​            
-
-
-
-
-

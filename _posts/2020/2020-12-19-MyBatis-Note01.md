@@ -9,7 +9,7 @@ Quick note about MyBatis configuration.
 
 
 
-![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
+​                                                                                                                                                  ![MyBatis logo](https://mybatis.org/images/mybatis-logo.png)
 
 ## 简介
 
@@ -37,9 +37,9 @@ Quick note about MyBatis configuration.
   </dependency>
   ```
 
-- Github： https://github.com/mybatis/mybatis-3
+- Github： [https://github.com/mybatis/mybatis-3](https://github.com/mybatis/mybatis-3)
 
-- 中文文档：https://mybatis.org/mybatis-3/zh/index.html
+- 中文文档：[https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html)
 
 ###  持久化
 
@@ -336,3 +336,26 @@ Dao层，Service层，Controller层
       </resources>
   </build> 
   ```
+
+  
+
+
+
+
+
+​     
+
+
+
+
+
+​                
+
+​             
+
+​            
+
+
+
+
+

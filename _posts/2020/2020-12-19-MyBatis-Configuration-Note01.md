@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mybatis Note01
+title: Mybatis Configuration 
 category: Mybatis
 tags: [Mybatis]
 ---

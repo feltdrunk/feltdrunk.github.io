@@ -5,18 +5,12 @@ subtitle: <span class="mega-octicon octicon-repo"></span>&nbsp;&nbsp; To mark us
 menu: Bookmark
 ---
  
-## Kubernetes
-- [kubectl](https://kubernetes.io/docs/reference/kubectl/) - kubectl command-line interface
 
 ## Java
 - [Xstream](http://x-stream.github.io/index.html) -  Serialize objects to XML and back again
 - [JAXB](https://jaxb.java.net/) - Java Architecture for XML Binding
+- [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/) - Reference Documentation 
 
-## PHP
-- [Idiorm](https://github.com/j4mie/idiorm/) - A lightweight nearly-zero-config object-relational mapper and fluent query builder for PHP5
-- [GitElephant](https://github.com/matteosister/GitElephant) - An abstraction layer to manage your git repositories with php
-- [Propel](https://github.com/propelorm/Propel) - ORM for PHP5
-- [SimpleDOM](https://code.google.com/archive/p/simpledom/) - Built upon SimpleXML and provids DOM methods using SimpleXML's syntax.
 
 ## Javascript
 - [fullPage.js](http://alvarotrigo.com/fullPage/) - To create fullscreen scrolling websites / single page websites
@@ -62,3 +56,7 @@ menu: Bookmark
 
 ## Websites
 - [HTML5 Up](https://html5up.net/) - Site Template
+
+
+## Kubernetes
+- [kubectl](https://kubernetes.io/docs/reference/kubectl/) - kubectl command-line interface
